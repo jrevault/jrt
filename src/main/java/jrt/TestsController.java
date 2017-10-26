@@ -16,6 +16,9 @@ public class TestsController {
   private Request  req;
 
   @Inject
+  Injector injector;
+
+  @Inject
   public TestsController( Request req ) {
     this.req = req;
   }
@@ -29,7 +32,6 @@ public class TestsController {
 
       String algo_classname = "jrt.algos.AlgoService_" + algo_code;
       AlgoService algo_class = ( AlgoService ) Class.forName( algo_classname ).newInstance();
-      Injector injector = App.instance.require(Injector.class);
       injector.injectMembers(algo_class);
       List<String> list = algo_class.generate();
 
