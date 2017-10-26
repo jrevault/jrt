@@ -10,6 +10,7 @@ public class App extends Jooby {
     run( App::new , args );
   }
 
+  public static App instance;
   {
     use( new Jackson());
 
@@ -18,6 +19,7 @@ public class App extends Jooby {
         "jrt.algos"
     ) );
 
+    instance = this;
   }
 
 }
