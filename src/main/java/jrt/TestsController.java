@@ -43,15 +43,4 @@ public class TestsController {
     }
   }
 
-  /**
-   * A ping to return pong
-   *
-   * @return just "pong"
-   */
-  @GET
-  @Path ( "/ping" )
-  public Result ping() {
-    return Results.ok( "pong" );
-  }
-  
 }
