@@ -70,22 +70,6 @@
 
     <dependencies>
 
-        <!-- *******************************
-                   FRONTEND WEBJARS
-             ******************************* -->
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>Semantic-UI</artifactId>
-            <version>2.2.10</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.webjars</groupId>
-            <artifactId>jquery</artifactId>
-            <version>3.2.1</version>
-        </dependency>
-        <!-- ******************************* -->
-
         <!-- SERVER -->
         <dependency>
             <groupId>org.jooby</groupId>
@@ -95,137 +79,20 @@
         <!-- LIBRARIES -->
         <dependency>
             <groupId>org.jooby</groupId>
-            <artifactId>jooby-livereload</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-whoops</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
             <artifactId>jooby-jackson</artifactId>
             <version>${jooby.version}</version>
         </dependency>
 
         <dependency>
             <groupId>org.jooby</groupId>
-            <artifactId>jooby-assets</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-rocker</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>com.fizzed</groupId>
-            <artifactId>rocker-compiler</artifactId>
-            <version>0.20.0</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-pac4j</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <!-- INIT -->
-        <dependency>
-            <groupId>org.jooby</groupId>
             <artifactId>jooby-scanner</artifactId>
             <version>${jooby.version}</version>
-        </dependency>
-
-        <!-- DATABASE -->
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-jdbc</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-jdbi</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-rxjava-jdbc</artifactId>
-            <version>${jooby.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>5.1.42</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <version>42.1.4</version>
-        </dependency>
-
-        <!-- FRONTEND -->
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-assets-uglify</artifactId>
-            <version>${jooby.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-assets-clean-css</artifactId>
-            <version>${jooby.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-assets-jscs</artifactId>
-            <version>${jooby.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-assets-jshint</artifactId>
-            <version>${jooby.version}</version>
-            <scope>provided</scope>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-assets-csslint</artifactId>
-            <version>${jooby.version}</version>
-            <scope>provided</scope>
         </dependency>
 
         <!-- LOGGING -->
         <dependency>
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
-        </dependency>
-
-        <!-- DOCUMENTATION -->
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-raml</artifactId>
-            <version>[${jooby.version}]</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jooby</groupId>
-            <artifactId>jooby-swagger</artifactId>
-            <version>[${jooby.version}]</version>
         </dependency>
 
         <!-- TESTS -->
@@ -235,11 +102,11 @@
             <scope>test</scope>
         </dependency>
 
-        <dependency>
+        <!--dependency>
             <groupId>io.rest-assured</groupId>
             <artifactId>rest-assured</artifactId>
             <scope>test</scope>
-        </dependency>
+        </dependency-->
 
         <dependency>
             <groupId>commons-logging</groupId>
@@ -251,19 +118,7 @@
             <artifactId>commons-io</artifactId>
             <version>2.5</version>
         </dependency>
-        <dependency>
-            <groupId>joda-time</groupId>
-            <artifactId>joda-time</artifactId>
-            <version>2.9.5</version>
-        </dependency>
 
     </dependencies>
 
-    <repositories>
-    </repositories>
-
-    <dependencyManagement>
-        <dependencies>
-        </dependencies>
-    </dependencyManagement>
 </project>
